@@ -82,3 +82,85 @@ if(items=='a'|| items=='A'){
         }
 
        }
+       
+       }else if(items=='b'||items=='B'){
+
+        NonvegitemsList: 
+
+
+          cout<<" Please select 1 , 2 , 3 , 4 , 5, 6 ,7 ,8 as per your choice \n"<<endl;
+        cout<<" (1) : Chicken tikka   ::::::   price : Rs = 250 \n"<<endl;
+        cout<<" (2) : Chicken biryani ::::::   price : Rs = 200 \n"<<endl;
+        cout<<" (3) : BBQ Pizza       ::::::   price : Rs = 700 \n"<<endl;
+        cout<<" (4) : Dry Chili       ::::::   price : Rs = 450 \n"<<endl;
+        cout<<" (5) : Beef boti       ::::::   price : Rs = 350 \n"<<endl;
+        cout<<" (6) : Burger          ::::::   price : Rs = 500 \n"<<endl;
+        cout<<" (7) : Dumba karahi    ::::::   price : Rs = 2500 \n"<<endl;
+        cout<<" (8) : Grill Fish      ::::::   price : Rs = 1500\n"<<endl;
+        
+
+        cin>>NonVeg;
+        
+        if(NonVeg==1){
+            billAmount=billAmount+250;
+
+        }else if(NonVeg==2){
+            billAmount=billAmount+200;
+
+        }else if(NonVeg==3){
+            billAmount=billAmount+700;
+
+        }else if(NonVeg==4){
+            billAmount=billAmount+450;
+
+        }else if(NonVeg==5){
+            billAmount=billAmount+350;
+
+        }else if(NonVeg==6){
+            billAmount=billAmount+500;
+
+        }else if(NonVeg==7){
+            billAmount=billAmount+2500;
+
+        }else if(NonVeg==8){
+            billAmount=billAmount+1500;
+
+        }else{
+            cout<<" you have entered wrong value , please try again :) "<<endl;
+            goto NonvegitemsList;
+
+
+        }cout<<" Do you want to add more items : y or no ? "<<endl;
+        cin>>SelectAgain;
+
+        if(SelectAgain=='y'){
+            goto items;
+        }else{
+            return billAmount;
+        }
+        
+
+       }else 
+       cout<<" you have entered the wrong value , please try again :) "<<endl;
+       goto items;
+
+
+
+    }else{
+    cout<<" you have entered wrong character, please enter s! "<<endl;
+    goto start;
+
+    }return billAmount;
+}
+
+
+int main()
+{  
+    int returnTotalBill();
+    int totalbill=returnTotalBill();
+
+    cout<<" Your total bill is "<<totalbill<<"! \n"<< endl;
+    cout<<" * * * * * * * * * * * * * * * * * * \n"<<endl;
+    cout<<" Thanks for ordering food from our restaurant :)\n"<<endl;
+    cout<<" * * * * * * * * * * * * * * * * * * ";
+}
