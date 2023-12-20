@@ -138,6 +138,171 @@ if(items=='a'|| items=='A'){
         }else{
             return billAmount;
         }
+        } if(items=='c'||items=='C'){
+
+       Drinkslist: 
+
+
+          cout<<" Please select 1 , 2 , 3 , 4 , 5, 6 ,7 ,8 as per your choice \n"<<endl;
+        cout<<" (1) :  Kashmiri Chai   ::::::   price : Rs = 130 \n"<<endl;
+        cout<<" (2) :  Oreo shake      ::::::   price : Rs = 220 \n"<<endl;
+        cout<<" (3) :  Pepsi           ::::::   price : Rs = 140 \n"<<endl;
+        cout<<" (4) : Orange juice     ::::::   price : Rs = 200 \n"<<endl;
+        cout<<" (5) : Lemon green tea  ::::::   price : Rs = 130 \n"<<endl;
+        cout<<" (6) :  Mint Margarita  ::::::   price : Rs = 270 \n"<<endl;
+        cout<<" (7) : dhoodh pati chai ::::::   price : Rs = 120 \n"<<endl;
+        cout<<" (8) : coffee           ::::::   price : Rs = 140\n"<<endl;
+        
+
+        cin>>drinks;
+        
+        if(drinks==1){
+            billAmount=billAmount+130;
+
+        }else if(drinks==2){
+            billAmount=billAmount+220;
+
+        }else if(drinks==3){
+            billAmount=billAmount+140;
+
+        }else if(drinks==4){
+            billAmount=billAmount+200;
+
+        }else if(drinks==5){
+            billAmount=billAmount+130;
+
+        }else if(drinks==6){
+            billAmount=billAmount+270;
+
+        }else if(drinks==7){
+            billAmount=billAmount+120;
+
+        }else if(drinks==8){
+            billAmount=billAmount+140;
+
+        }else{
+            cout<<" you have entered wrong value , please try again :) "<<endl;
+            goto Drinkslist;
+
+
+        }cout<<" Do you want to add more items : y or no ? "<<endl;
+        cin>>SelectAgain;
+
+        if(SelectAgain=='y'){
+            goto items;
+        }else{
+            return billAmount;
+        }
+        }if(items=='d'||items=='D'){
+
+       RotiList: 
+
+
+          cout<<" Please select 1 , 2 , 3 , 4 , 5, 6 ,7 ,8 as per your choice \n"<<endl;
+        cout<<" (1) :  Chapati       ::::::   price : Rs = 20 \n"<<endl;
+        cout<<" (2) :  Naam          ::::::   price : Rs = 25 \n"<<endl;
+        cout<<" (3) :  Puri paratha  ::::::   price : Rs = 100 \n"<<endl;
+        cout<<" (4) : Garlic naam    ::::::   price : Rs = 120 \n"<<endl;
+        cout<<" (5) : Kulcha         ::::::   price : Rs = 70 \n"<<endl;
+        cout<<" (6) :  Makhni Naan   ::::::   price : Rs = 130 \n"<<endl;
+        cout<<" (7) : Sada paratha   ::::::   price : Rs = 60 \n"<<endl;
+        cout<<" (8) :Tandoori Naan   ::::::   price : Rs = 40\n"<<endl;
+        
+
+        cin>>roti;
+        
+        if(roti==1){
+            billAmount=billAmount+20;
+
+        }else if(roti==2){
+            billAmount=billAmount+25;
+
+        }else if(roti==3){
+            billAmount=billAmount+100;
+
+        }else if(roti==4){
+            billAmount=billAmount+120;
+
+        }else if(roti==5){
+            billAmount=billAmount+70;
+
+        }else if(roti==6){
+            billAmount=billAmount+130;
+
+        }else if(roti==7){
+            billAmount=billAmount+60;
+
+        }else if(roti==8){
+            billAmount=billAmount+40;
+
+        }else{
+            cout<<" you have entered wrong value , please try again :) "<<endl;
+            goto RotiList;
+
+
+        }cout<<" Do you want to add more items : y or no ? "<<endl;
+        cin>>SelectAgain;
+
+        if(SelectAgain=='y'){
+            goto items;
+        }else{
+            return billAmount;
+        }
+        }if(items=='e'||items=='E'){
+
+       DessertsList:
+
+
+          cout<<" Please select 1 , 2 , 3 , 4 , 5, 6 ,7 ,8 as per your choice \n"<<endl;
+        cout<<" (1) :  Chocolate lava cake ::::::   price : Rs = 400 \n"<<endl;
+        cout<<" (2) :  Ras Malai           ::::::   price : Rs = 300 \n"<<endl;
+        cout<<" (3) :  Blueberry Ice cream ::::::   price : Rs = 270 \n"<<endl;
+        cout<<" (4) :  Falooda             ::::::   price : Rs = 330 \n"<<endl;
+        cout<<" (5) :  Kheer               ::::::   price : Rs = 170 \n"<<endl;
+        cout<<" (6) :  Brownie             ::::::   price : Rs = 280 \n"<<endl;
+        cout<<" (7) :  3 milk cake         ::::::   price : Rs = 650 \n"<<endl;
+        cout<<" (8) :  Strawberry icecream ::::::   price : Rs = 520 \n"<<endl;
+        
+
+        cin>>desserts;
+        
+        if(desserts==1){
+            billAmount=billAmount+400;
+
+        }else if(desserts==2){
+            billAmount=billAmount+300;
+
+        }else if(desserts==3){
+            billAmount=billAmount+270;
+
+        }else if(desserts==4){
+            billAmount=billAmount+330;
+
+        }else if(desserts==5){
+            billAmount=billAmount+170;
+
+        }else if(desserts==6){
+            billAmount=billAmount+280;
+
+        }else if(desserts==7){
+            billAmount=billAmount+650;
+
+        }else if(desserts==8){
+            billAmount=billAmount+520;
+
+        }else{
+            cout<<" you have entered wrong value , please try again :) "<<endl;
+            goto DessertsList;
+
+
+        }cout<<" Do you want to add more items : y or no ? "<<endl;
+        cin>>SelectAgain;
+
+        if(SelectAgain=='y'){
+            goto items;
+        }else{
+            return billAmount;
+        }
         
 
        }else 
